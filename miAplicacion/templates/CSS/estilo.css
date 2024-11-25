@@ -1,0 +1,94 @@
+/*Establecer propiedades de fuente para toda la página*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Definir el estilo de la marca de la barra de navegación.*/
+.navbar-brand {
+    font-weight: bold;
+}
+
+/*estilo de tarjeta*/
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/*efecto de desplazamiento de la tarjeta*/
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #f8f9fa;
+    cursor: pointer;
+
+    color: #007bff;
+}
+
+/*estilo modo oscuro*/
+.dark-mode {
+    background-color: #131111;
+    color: #ffffff;
+}
+
+/*Estilo de barra de navegación en modo oscuro */
+*/ .dark-mode.navbar {
+    background-color: #191313;
+}
+
+/*Estilo de tarjeta en modo oscuro */
+.dark-mode.card {
+    background-color: #333333;
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.075);
+}
+
+/*Efecto de desplazamiento de la tarjeta en modo oscuro*/
+.dark-mode.card:hover {
+    background-color: #444444;
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15);
+    color: #00ff00;
+}
+
+/*Escalar estilo de imagen */
+.scaled-image {
+    max-width: 50px;
+    max-height: 50px;
+
+}
+
+
+
+
+
+/*Efecto de desplazamiento dinámico del título */
+#dynamicTitle {
+    opacity: 0;
+
+    animation: fadeIn 5s forwards;
+
+}
+
+/*Fotogramas clave de animación*/
+#dynamicTitle:hover {
+    animation: fadeOut 1s forwards;
+
+}
+
+/*Fotogramas clave de animación-Efecto desvanecido */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*Fotogramas clave de animación-Efecto de desvanecimiento*/
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
